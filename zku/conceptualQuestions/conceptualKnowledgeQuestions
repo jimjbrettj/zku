@@ -1,5 +1,16 @@
 ZKU Conceptual Knowledge Questions
 1. What is a smart contract? How are they deployed? You should be able to describe how a smart contract is deployed and the necessary steps.
+
+A samrt contract is a piece of code that represents the terms of an agreement. It is stored on a blockchain and can be created and interacted with by users of the chain to do many things ranging from creating tokens to decentralized applications. To deploy a smart contract, it is compiled down to its application byte interface (ABI) and then an account with enough gas will use a deployment script with something like web3.js or ethers.js and a connection to a blockchain node to delpy the contract to be stored on chain.
+
 2. What is gas? Why is gas optimization such a big focus when building smart contracts?
+
+Gas is the unit used to pay transaction costs on a blockchain. It is used to limit the amount of work needed to execute a transaction (think prevent infinite loops for instance) and well as pay for its execution. Gas optimization is important because reducing the amount of work needed for a transaction to execute will reduce the cost for the entity trying to execute the transaction. Since users want to pay the smallest amount possible to execute a transaction it is important that gas usage is opimized.
+
 3. What is a hash? Why do people use hashing to hide information?
+
+A hash is a cryptographic one way funtion where given an output it is infeasable to determine what the input was. Hash functions are not reverible, so they are good for hiding information since like I said, given the output of a hash it is infeasible to know the input. Another characteristic of a hash function is that no two inputs will map to the same output (collision resistance) and its because of this you can be confident that your output is unique and cannot be used to determine the input to the hash function.
+
 4. How would you prove to a colorblind person that two different colored objects are actually of different colors? You could check out Avi Wigderson talk about a similar problem [here](https://www.youtube.com/watch?v=5ovdoxnfFVc&t=4s).
+
+The colorlind person will hide the objects from the non colorblind person. The colorblind person will show one of the objects at random (noting which one) and then the other person will say what color it is. This doesn't prove much, so the colorblind person hides the objects again and presentts one of the objects again and lets the other person say what color it is. This is repeated (with the object shown being switched) until it is statistically improbible that the none colorblind person has been able to guess the same color for the same object if indeed the objects were the same color.
