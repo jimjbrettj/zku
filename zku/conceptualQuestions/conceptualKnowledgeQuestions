@@ -1,0 +1,5 @@
+ZKU Conceptual Knowledge Questions
+1. What is a smart contract? How are they deployed? You should be able to describe how a smart contract is deployed and the necessary steps.
+2. What is gas? Why is gas optimization such a big focus when building smart contracts?
+3. What is a hash? Why do people use hashing to hide information?
+4. How would you prove to a colorblind person that two different colored objects are actually of different colors? You could check out Avi Wigderson talk about a similar problem [here](https://www.youtube.com/watch?v=5ovdoxnfFVc&t=4s).
